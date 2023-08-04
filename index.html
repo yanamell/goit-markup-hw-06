@@ -31,9 +31,12 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
+    
     <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
@@ -65,6 +68,81 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="menu-btn js-open-menu">
+              <svg class="" width="32" height="22">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+        </div>
+        <div class="mobil-container js-menu-container">
+        <button type="button" class="modal-btn close-menu-btn js-close-menu">
+            <svg class="icon-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <nav class="mobil-navigation">
+            <ul class="list mobil-menu">
+                <li class="mobil-menu-item">
+                    <a class="mobil-link  link" href="./index.html">Studio</a>
+                </li>
+                <li class="mobil-menu-item">
+                    <a class="mobil-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobil-menu-item">
+                    <a class="mobil-link link" href="">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-wrapper">
+        <address class="address-mobil-item">
+            <ul class="list mobil-adress">
+                <li class="header-mobil-info">
+                    <a class="header-mobil-tel link" href="tel:+110001111111">
+                        +11 (000) 111-11-11
+                    </a>
+                </li>
+                <li class="header-mobil-info">
+                    <a class="header-mobil-email link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+        </address>
+        <ul class="list mobil-social">
+            <li class="footer-icons-link">
+                <a href="instagram" class="link socials-link">
+                    <svg class="socials-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-icons-link">
+                <a href="twitter" class="link socials-link">
+                    <svg class="socials-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+        
+                </a>
+            </li>
+            <li class="footer-icons-link">
+                <a href="facebook" class="link socials-link">
+                    <svg class="socials-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-icons-link">
+                <a href="linkedin" class="link socials-link">
+                    <svg class="socials-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        </div>
+
+        
+
         </div>
     </header>
     <main>
@@ -74,7 +152,7 @@
                     for Your Business</h1>
                 <button type="button" class="hero-btn" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> 
         <section class="adventages">
             <div class="container container-adventages">
                 <h2 class="visually-hidden">Adventages</h2>
@@ -84,7 +162,7 @@
                             <svg class="adventages-icon" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
-                        </div>
+                        </div> 
                         <h3 class="adventages-subtitle"> Strategy </h3>
                         <p class="adventages-item-text"> Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
@@ -122,22 +200,24 @@
                 </ul>
             </div>
         </section>
+        
         <section class="work">
             <div class="container">
                 <h2 class="work-title">What are we doing</h2>
                 <ul class="work-menu list">
-                    <li class="work-item"><img src="./images/img_1.jpg" alt="computer" width="360" height="300"></li>
-                    <li class="work-item"><img src="./images/img_2.jpg" alt="site" width="360" height="300"></li>
-                    <li class="work-item"><img src="./images/img_3.jpg" alt="phone" width="360" height="300"></li>
+                    <li class="work-item"><img srcset="./images/img_1.jpg 1x, ./images/work-1@2x-min.jpg 2x" src="./images/img_1.jpg" alt="computer" width="360" height="300"></li>
+                    <li class="work-item"><img srcset="./images/img_2.jpg 1x, ./images/work-2@2x-min.jpg 2x" src="./images/img_2.jpg" alt="site" width="360" height="300"></li>
+                    <li class="work-item"><img srcset="./images/img_3.jpg 1x, ./images/work-3@2x-min.jpg 2x" src="./images/img_3.jpg" alt="phone" width="360" height="300"></li>
                 </ul>
             </div>
         </section>
+    
         <section class="team">
-            <div class="container">
+            <div class="container team-container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                        <img src="./images/img_4.jpg" alt="Mark" width="264" height="260">
+                        <img srcset="./images/img_4.jpg 1x, ./images/mark@2x-min.jpg 2x" src="./images/img_4.jpg" alt="Mark" width="264" height="260">
                         <div class="team-name">
                             <h3 class="title-h">Mark Guerrero</h3>
                             <p class="text-p">Product Designer</p>
@@ -175,7 +255,7 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/img_5.jpg" alt="Tom" width="264" height="260">
+                        <img srcset="./images/img_5.jpg 1x, ./images/tom@2x-min.jpg 2x" src="./images/img_5.jpg" alt="Tom" width="264" height="260">
                         <div class="team-name">
                             <h3 class="title-h">Tom Ford</h3>
                             <p class="text-p">Frontend Developer</p>
@@ -213,7 +293,7 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/img_6.jpg" alt="Camila" width="264" height="260">
+                        <img srcset="./images/img_6.jpg 1x, ./images/camila@2x-min.jpg 2x" src="./images/img_6.jpg" alt="Camila" width="264" height="260">
                         <div class="team-name">
                             <h3 class="title-h">Camila Garcia</h3>
                             <p class="text-p">Marketing</p>
@@ -251,7 +331,7 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <img src="./images/img_7.jpg" alt="Daniel" width="264" height="260">
+                        <img srcset="./images/img_7.jpg 1x, ./images/daniel@2x-min.jpg 2x" src="./images/img_7.jpg" alt="Daniel" width="264" height="260">
                         <div class="team-name">
                             <h3 class="title-h">Daniel Wilson</h3>
                             <p class="text-p">UI Designer</p>
@@ -291,8 +371,8 @@
                 </ul>
             </div>
         </section>
-        <section class="customers">
-            <div class="container">
+        <section class="customers ">
+            <div class="container customers-container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="list customers-list">
                     <li class="customers-block">
@@ -387,7 +467,8 @@
                 <p class="footer-title">Subscribe</p>
                 <form class="footer-form">
                     <label aria-label="E-mail" class="footer-label ">
-                        <input type="email" name="footer-email" id="footer-email" class="footer-input" placeholder="E-mail">
+                        <input type="email" name="footer-email" id="footer-email" class="footer-input"
+                            placeholder="E-mail">
                     </label>
                     <button type="submit" class="footer-form-btn">
                         Subscribe
@@ -439,23 +520,25 @@
                     <label for="user-comment" class="input-label">Comment</label>
                     <textarea name="user-comment" id="user-comment" class="modal-textarea"
                         placeholder="Text input"></textarea>
-                    </div>
-                    <div class="modal-field-check">
-                        <input type="checkbox" name="user-privacy" id="user-privacy" class="modal-check visually-hidden" value="true">
-                        <label for="user-privacy" class="check-text">
-                            <span class="label-span">
-                                <svg class="check-icon" width="10" height="8">
-                                    <use href="./images/icons.svg#icon-checkmark"></use>
-                                </svg>
-                            </span>
-                            I accept the terms and conditions of the <a href="" class="privacy-link"> Privacy Policy
-                            </a> </label>
-                    </div>
-                    <button type="submit" class="modal-btn-send">Send</button>
+                </div>
+                <div class="modal-field-check">
+                    <input type="checkbox" name="user-privacy" id="user-privacy" class="modal-check visually-hidden"
+                        value="true">
+                    <label for="user-privacy" class="check-text">
+                        <span class="label-span">
+                            <svg class="check-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="" class="privacy-link"> Privacy Policy
+                        </a> </label>
+                </div>
+                <button type="submit" class="modal-btn-send">Send</button>
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
